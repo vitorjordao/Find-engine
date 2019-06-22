@@ -1,0 +1,23 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>NAVEGATOR</title>
+            <link rel="stylesheet" href="css/base-index.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="title-navagator">Navegator</h1>
+            <form action="finder.html" method="POST" class="form-find">
+                <input type="text" class="text-principal"/>
+                <button onclick="finderController.find()" class="find" type="submit">Pesquisar</button>
+            </form>
+        </main>
+
+        <script src="js/controller/FinderController.js"></script>
+    
+        <script>
+            var finderController = new FinderController();
+        </script>
+    </body>
+</html>

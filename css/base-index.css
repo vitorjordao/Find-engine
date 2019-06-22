@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-find{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 95%;
+    align-items: baseline;
+    margin-top: 5em;
+}
+
+.text-principal, .find{
+    height: 2rem;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-color: rgb(136, 136, 136);
+    border-style: solid;
+    box-shadow: 0px 0px 5px 0px #1ea2c4;
+}
+
+.form-find:hover *{
+    border-color: #ff4747;
+    box-shadow: 0px 0px 5px 0px #ff4747;
+}
+
+.text-principal{
+    margin-bottom: 1em;
+    width: 60%;
+    padding-left: 1rem;
+    border-right: 0;
+    border-radius: 3em 0 0 3em;
+}
+
+.find{
+    width: 20%;
+    min-width: 7em;
+    border-left: 0;
+    border-radius: 0 3em 3em 0;
+    font-weight: bold;
+}

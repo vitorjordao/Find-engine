@@ -1,0 +1,194 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+}
+
+header, footer{
+    box-shadow: 0px 0px 2px 0px #1ea2c4;
+    background-color: rgb(250, 250, 250);
+}
+
+a
+{
+    text-decoration: inherit;
+    color: #000000;
+}
+
+footer{
+    margin-top: 2px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: #ff4747;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+h2:hover, cite:hover{
+    text-decoration: underline;
+} 
+
+.title-navagator{
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.form-find{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: baseline;
+}
+
+.form-find:hover *{
+    border-color: #ff4747;
+    box-shadow: 0px 0px 5px 0px #ff4747;
+}
+
+.text-principal, .find{
+    height: 2rem;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-color: rgb(136, 136, 136);
+    border-style: solid;
+    box-shadow: 0px 0px 5px 0px #1ea2c4;
+}
+
+.text-principal{
+    margin-bottom: 1em;
+    width: 50%;
+    padding-left: 1rem;
+    border-right: 0;
+    border-radius: 3em 0 0 3em;
+}
+
+.find{
+    width: 20%;
+    min-width: 7em;
+    border-left: 0;
+    border-radius: 0 3em 3em 0;
+    font-weight: bold;
+}
+
+.page{
+    word-wrap: break-word;
+}
+
+.advertising-size{
+    width: 30%;
+}
+
+.searched-pages{
+    width: 100%;
+}
+
+.advertising-pages{
+    background-color: rgb(250, 255, 205);
+    order: -1;
+    width: 100%;
+}
+
+.page:hover{
+    background-color: rgba(30, 162, 196, 0.1);
+    box-shadow: 0px 0px 2px 0px #1ea2c4;
+}
+
+.advertising-pages .page:hover{
+    background-color: rgb(255, 255, 116);
+    box-shadow: 0px 0px 2px 0px rgb(255, 255, 0);
+}
+
+.content{
+    padding: 1em;
+}
+
+.link{
+    font-size: 0.7em;
+    color: darkcyan;
+}
+
+.load-more{
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-radius: 3em 3em 3em 3em;
+    box-shadow: 0px 0px 2px 0px #1ea2c4;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.load-more:hover,.load-more:focus{
+    box-shadow: 0px 0px 5px 0px #ff4747;
+}
+
+.load-pages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:650px){
+    header{
+        justify-content: space-between;
+    }
+
+    main{
+        flex-flow: wrap;
+    }
+
+    .text-principal{
+        width: 80%;
+    }
+
+    .title-navagator{
+        margin-left: 1em;
+    }
+
+    .find{
+        width: 20%;
+        margin-right: 1em;
+    }
+
+    .form-find{
+        justify-content: initial;
+        flex-flow: row;
+        width: 50%;
+    }
+
+    .searched-pages{
+        width: 60%;
+    }
+
+    .advertising-pages{
+        order: 0;
+        width: 40%;
+    }
+
+    .page{
+        margin-left: 1%;
+        margin-right: 1%;
+        word-wrap: break-word;
+    }
+}
